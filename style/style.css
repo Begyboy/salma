@@ -231,22 +231,23 @@ body._lock {
 .home__row-line {
     max-width: 548px;
     margin: 0px 44px 5px 0px;
-    border: 1px solid rgba(255, 255, 255, 0.24);;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    ;
 }
 
 .home__row-subtitle {
-font-size: 13px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
-margin-bottom: 46px;
-max-width: 72px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 46px;
+    max-width: 72px;
 }
 
 .home__row-subtitle:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -257,7 +258,7 @@ text-decoration: underline;
 @media (max-width: 767px) {
     .header__nav-link {
         color: white;
-        font-size: 15px;
+        font-size: 30px;
     }
 
     .header__nav-icon:last-of-type {
@@ -349,7 +350,7 @@ text-decoration: underline;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 25px;
     }
 
     .home__column {
