@@ -132,6 +132,7 @@ body._lock {
     flex-direction: column;
     gap: 8px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .home__column {
@@ -141,6 +142,7 @@ body._lock {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 }
 
 .home__column-content {
@@ -194,6 +196,7 @@ body._lock {
 .home__row-block {
     display: flex;
     gap: 8px;
+    width: 100%;
 }
 
 .home__row {
@@ -232,7 +235,6 @@ body._lock {
     max-width: 548px;
     margin: 0px 44px 5px 0px;
     border: 1px solid rgba(255, 255, 255, 0.24);
-    ;
 }
 
 .home__row-subtitle {
@@ -250,11 +252,161 @@ body._lock {
     text-decoration: underline;
 }
 
+/* ****************************************** */
+
+.shop {
+    margin-top: 69px;
+}
+
+.shop__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop__title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F1E1E;
+    max-width: 906px;
+    margin-bottom: 38px;
+}
+
+.shop__content-description {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.shop__contentColumn-line {
+    max-width: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 17px;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.shop__content-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.shop__table-cirph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 9999px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 15px;
+    padding: 6px 12px;
+}
+
+.shop__table-title {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F1E1E;
+    max-width: 104px;
+}
+
+.shop__table-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F1E1E;
+    max-width: 237px;
+    margin-top: 8px;
+}
+
+.shop__contentRow-line {
+    height: 122px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.shop__content-products {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.shop__content-product {
+    display: flex;
+    flex-direction: column;
+  max-width: 400px;
+ }
+
+.shop__contentProducts-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop__contentProducts-name {
+font-size: 15px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+color: #1F1E1E;
+}
+
+.shop__contentProducts-price span {
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+margin-right: 3px;
+text-decoration: line-through;
+}
+
+.shop__contentProducts-price {
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+color: #1F1E1E;
+}
 
 
 /* Main End */
 
 /* Media Start */
+@media (max-width:1250px) {
+    .shop__content-products {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:850px) {
+    .shop__content-products {
+        justify-content: center;
+    }
+}
+
+@media (max-width:410px) {
+    .shop__contentProducts-info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 767px) {
     .header__nav-link {
         color: white;
@@ -265,7 +417,7 @@ body._lock {
         color: white;
         background: rgba(0, 0, 0, 0.9);
         margin-left: 0px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .menu__icon {
@@ -280,7 +432,7 @@ body._lock {
     .menu__icon::before {
         left: 0;
         position: absolute;
-        height: 10%;
+        height: 15%;
         width: 100%;
         transition: all 0.3s ease 0s;
         background-color: black;
@@ -372,7 +524,22 @@ body._lock {
     .home__row:last-of-type {
         max-width: 767px;
     }
+
+    .shop__content-description {
+        gap: 20px;
+    }
+
+    .shop__content-table {
+        width: 100%;
+    }
+
+    .shop__contentRow-line {
+        display: none;
+    }
 }
+
+
+
 
 
 /* Media End */
